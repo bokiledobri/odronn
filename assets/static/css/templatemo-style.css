@@ -23,7 +23,7 @@ html {
 }
 
 .green {
-	color:#0A0;
+	color:#808080;
 	font-weight:normal;
 }
 
@@ -34,7 +34,7 @@ html {
 .add{background: #333; padding: 10%; height: 300px;}
 .tpo-padding{ padding-top: 10%;}
 .navbar-default {
-    background-color: #98d361;
+    background-color: #a2a2a2;
     border-color: transparent;
 }
 
@@ -73,7 +73,7 @@ html {
 
 .navbar-right a:hover {
   /*background-color: #fff !important;*/
-  /*color: #8bc655 !important;*/;
+  /*color: #808080 !important;*/;
 }
 
 .navbar-right li {
@@ -101,7 +101,7 @@ html {
 }
 
 .navbar-right li:hover a {
-    color: #7cb14a !important;
+    color: #737477 !important;
 }
 
 #big-banner {
@@ -133,7 +133,7 @@ html {
 }
 
 #big-banner .main-icons i:hover {
-    color: #8bc655 !important;
+    color: #808080 !important;
 }
 
 #big-banner .main-icons a {
@@ -148,8 +148,8 @@ html {
 }
 
 .heading {
-    border-bottom: 4px solid #98d361;
-    border-top: 4px solid #98d361;
+    border-bottom: 4px solid #a2a2a2;
+    border-top: 4px solid #a2a2a2;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -170,7 +170,7 @@ html {
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 45px solid #98d361;
+    border-top: 45px solid #a2a2a2;
 }
 
 .cd-container {
@@ -286,7 +286,7 @@ html {
 }
 
 .cd-timeline-img:hover {
-    background-color: #98d361;
+    background-color: #a2a2a2;
     cursor: pointer;
 }
 
@@ -731,7 +731,7 @@ textarea {
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 3px solid #b1e67f;
+    border: 3px solid #b1b4ab;
     width: 160px;
     height: 45px;
     display: block;
@@ -739,12 +739,12 @@ textarea {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background-color: #98d361;
+    background-color: #a2a2a2;
 }
 
 .submit input:hover {
-    background-color: #b1e67f;
-    border-color: #98d361;
+    background-color: #b1b4ab;
+    border-color: #a2a2a2;
 }
 
 form {
@@ -778,7 +778,7 @@ form {
 }
 
 footer {
-    background-color: #98d361;
+    background-color: #a2a2a2;
     margin-top: 40px;
 }
 
@@ -815,7 +815,7 @@ footer {
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 3px solid #b1e67f;
+    border: 3px solid #b1b4ab;
     width: 170px;
     height: 40px;
     display: inline-block;
@@ -823,12 +823,12 @@ footer {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background-color: #98d361;
+    background-color: #a2a2a2;
 }
 
 .back-to-top a:hover {
-    background-color: #98d361;
-    border-color: #8bc655;
+    background-color: #a2a2a2;
+    border-color: #808080;
 }
 
 .social-icons ul {
@@ -850,13 +850,13 @@ footer {
     display: block;
     text-align: center;
     line-height: 35px;
-    background-color: #98d361;
-    border: 4px solid #b1e67f;
+    background-color: #a2a2a2;
+    border: 4px solid #b1b4ab;
 }
 
 .social-icons a:hover {
-    background-color: #98d361;
-    border-color: #8bc655;
+    background-color: #a2a2a2;
+    border-color: #808080;
 }
 
 @media (max-width:992px) {
@@ -892,7 +892,7 @@ footer {
 
 @media (max-width:767px) {
     .navbar-default .navbar-toggle {
-        border-color: #8bc655;
+        border-color: #808080;
         color: #fff;
     }
 
@@ -904,12 +904,12 @@ footer {
     .navbar-default .navbar-nav>li>a {
         padding-bottom: 13px;
         text-align: center;
-        border-color: #8bc655;
-        border-top: 1px solid #8bc655;
+        border-color: #808080;
+        border-top: 1px solid #808080;
     }
 
     .contact {
-        border-bottom: 1px solid #8bc655;
+        border-bottom: 1px solid #808080;
     }
 }
 
@@ -934,7 +934,7 @@ footer {
     }
 
     #big-banner .main-icons i:hover {
-        color: #8bc655 !important;
+        color: #808080 !important;
     }
 
     #big-banner .main-icons a {
@@ -970,7 +970,7 @@ footer {
     }
 
     #big-banner .main-icons i:hover {
-        color: #8bc655 !important;
+        color: #808080 !important;
     }
 
     #big-banner .main-icons a {
