@@ -7,14 +7,13 @@ Path.join(["rel", "plugins", "*.exs"])
 |> Enum.map(&Code.eval_file(&1))
 
 use Mix.Releases.Config,
-    # This sets the default release built by `mix release`
-    default_release: :default,
-    # This sets the default environment used by `mix release`
-    default_environment: Mix.env()
+  # This sets the default release built by `mix release`
+  default_release: :default,
+  # This sets the default environment used by `mix release`
+  default_environment: Mix.env()
 
 # For a full list of config options for both releases
 # and environments, visit https://hexdocs.pm/distillery/configuration.html
-
 
 # You may define one or more environments in this file,
 # an environment's settings will override those of a release
@@ -28,14 +27,14 @@ environment :dev do
   # It is recommended that you build with MIX_ENV=prod and pass
   # the --env flag to Distillery explicitly if you want to use
   # dev mode.
-  set dev_mode: true
-  set include_erts: false
-  set cookie: :":?~:F=8MA(0O>6<6:IX{n{{S$3z~/d:C;in)7MCagy/Fpo_*oezG&L}lTnX~FC[|"
+  set(dev_mode: true)
+  set(include_erts: false)
+  set(cookie: :":?~:F=8MA(0O>6<6:IX{n{{S$3z~/d:C;in)7MCagy/Fpo_*oezG&L}lTnX~FC[|")
 end
 
 environment :prod do
-  set include_erts: true
-  set include_src: false
+  set(include_erts: true)
+  set(include_src: false)
 end
 
 # You may define one or more releases in this file.
@@ -43,10 +42,12 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :gigalixir_getting_started do
-  set version: current_version(:gigalixir_getting_started)
-  set applications: [
-    :runtime_tools
-  ]
-end
+release :odronn do
+  set(version: current_version(:odronn))
 
+  set(
+    applications: [
+      :runtime_tools
+    ]
+  )
+end

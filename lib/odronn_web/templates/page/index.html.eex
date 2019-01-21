@@ -1,0 +1,87 @@
+ 
+ 
+    
+    <header class="site-header" id="top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                          <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="logo-wrapper">
+                            <a class="navbar-brand" href="#templatemo">
+                                <p>O<em>dronn</em></p>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><span></span><a href="#top" class="home">Home</a></li>
+                            <li><span></span><a href="#second-section" class="portfolio">Dosadasnji radovi</a></li>
+                            <li><span></span><a href="#third-section" class="contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </header>
+    <div id="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+  <%= content(@conn, "Homepage summary", :html) do %>
+                    <p>What we have done</p>
+  <% end %>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+       <div id="second-section">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                              <%= content(@conn, "Homepage subheading", :html) do %>
+                    <h2>Latest work</h2>
+  <% end %>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    <div id="second-section2">
+        <div class="container">
+            <div class="row">
+                <div class="triangle"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <section id="cd-timeline-2" class="cd-container">
+                    <%= Enum.map(get_pages(), fn {slug, title} ->%>
+                    <div class="cd-timeline-block">
+                         <a href="<%= slug %>">
+                            <div class="cd-timeline-img cd-picture">
+                             <img src="images/camera-icon.png" alt="Picture">
+                            </div>
+                            </a>
+
+                            <div class="cd-timeline-content projects">
+                                                        <%= content(@conn, slug, :image, alt: "Alternative text if the image doesn't load", do: "images/project-1.jpg") %>
+                                <div class="project-content">
+                         <a href="<%= slug %>">
+                                    <h2><%=title%></h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <% end )%>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+

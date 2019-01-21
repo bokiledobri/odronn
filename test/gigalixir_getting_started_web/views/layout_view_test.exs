@@ -1,3 +1,3 @@
-defmodule GigalixirGettingStartedWeb.LayoutViewTest do
-  use GigalixirGettingStartedWeb.ConnCase, async: true
+defmodule OdronnWeb.LayoutViewTest do
+  use OdronnWeb.ConnCase, async: true
 end

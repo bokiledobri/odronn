@@ -1,4 +1,4 @@
-defmodule GigalixirGettingStarted.DataCase do
+defmodule Odronn.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule GigalixirGettingStarted.DataCase do
 
   using do
     quote do
-      alias GigalixirGettingStarted.Repo
+      alias Odronn.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import GigalixirGettingStarted.DataCase
+      import Odronn.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GigalixirGettingStarted.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Odronn.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(GigalixirGettingStarted.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Odronn.Repo, {:shared, self()})
     end
 
     :ok

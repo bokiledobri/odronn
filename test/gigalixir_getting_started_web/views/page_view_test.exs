@@ -1,3 +1,3 @@
-defmodule GigalixirGettingStartedWeb.PageViewTest do
-  use GigalixirGettingStartedWeb.ConnCase, async: true
+defmodule OdronnWeb.PageViewTest do
+  use OdronnWeb.ConnCase, async: true
 end

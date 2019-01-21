@@ -1,0 +1,17 @@
+<div class="col-lg-4">
+  <%= content(@conn, "Blog title", :html) do %>
+  <h2>Title</h2>
+  <% end %>
+</div>
+
+<div class="col-lg-6">
+  <%= content(@conn, "Blog post", :html) do %>
+  <p>Odje kao neki opis</p>
+  <% end %>
+</div>
+
+<div class="col-lg-6">
+  <%= content(@conn, "Youtube embed", :raw_html) do %>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5SVLs_NN_uY" frameborder="0" allowfullscreen></iframe>
+  <% end %>
+</div>

@@ -6,16 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :gigalixir_getting_started,
-  ecto_repos: [GigalixirGettingStarted.Repo]
+config :odronn,
+  ecto_repos: [Odronn.Repo]
 
 # Configures the endpoint
-config :gigalixir_getting_started, GigalixirGettingStartedWeb.Endpoint,
+config :odronn, OdronnWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "YbvTQa/w6m9GwiFuVEp76H8MgaXGqh0G/1aMI+3w+QEqMM9Emilm3OKhEWPOXnfc",
-  render_errors: [view: GigalixirGettingStartedWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: GigalixirGettingStarted.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: OdronnWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Odronn.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -24,4 +23,26 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"
+
+# Thesis Main Config
+config :thesis,
+  store: Thesis.EctoStore,
+  authorization: Odronn.ThesisAuth,
+  uploader: Thesis.RepoUploader
+
+# Thesis Store Config
+config :thesis, Thesis.EctoStore, repo: Odronn.Repo
+
+# Thesis Notifications Config
+# config :thesis, :notifications,
+#   add_page: [],
+#   page_settings: [],
+#   import_export_restore: []
+
+# Thesis Dynamic Pages Config
+config :thesis, :dynamic_pages,
+  view: OdronnWeb.PageView,
+  templates: ["simple_post.html"],
+  not_found_view: OdronnWeb.ErrorView,
+  not_found_template: "404.html"

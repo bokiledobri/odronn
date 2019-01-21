@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odronn</title>
+  <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/app.css") %>"/>
+  <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/bootstrap.min.css") %>"/>
+  <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/font-awesome.min.css") %>"/>
+  <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/templatemo-style.css") %>"/>
+
+</head>
+
+<body>
+  <%= render @view_module, @view_template, assigns %>
+  <script type="text/javascript" src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  <script type="text/javascript" src="<%= static_path(@conn, "/js/vendor/jquery-1.10.2.min.js") %>"></script>
+  <script type="text/javascript" src="<%= static_path(@conn, "/js/vendor/modernizr.min.js") %>"></script>
+  <script type="text/javascript" src="<%= static_path(@conn, "/js/vendor/bootstrap.min.js") %>"></script>
+  <script type="text/javascript" src="<%= static_path(@conn, "/js/custom.js") %>"></script>
+
+</body>
+
+</html>

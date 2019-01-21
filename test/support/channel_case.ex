@@ -1,4 +1,4 @@
-defmodule GigalixirGettingStartedWeb.ChannelCase do
+defmodule OdronnWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,17 +21,17 @@ defmodule GigalixirGettingStartedWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint GigalixirGettingStartedWeb.Endpoint
+      @endpoint OdronnWeb.Endpoint
     end
   end
-
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GigalixirGettingStarted.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Odronn.Repo)
+
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(GigalixirGettingStarted.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Odronn.Repo, {:shared, self()})
     end
+
     :ok
   end
-
 end
