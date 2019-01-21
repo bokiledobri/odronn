@@ -2,10 +2,10 @@
   <div class="row">
     <div class="col-md-12 blogShort">
       <%= content(@conn, "Post title", :html) do %>
-      <h1>Title 1</h1>
+      <h1>How to lose 20 pounds in 1 week!</h1>
       <%end%>
       <%= content(@conn, "Post subtitle", :html) do %>
-      <h3>How to lose 20 pounds in 1 week!</h3>
+      <h3>And potentially die in the process.</h3>
       <%end%>
       <br>
       <%= content(@conn, "Post embed", :raw_html) do %>

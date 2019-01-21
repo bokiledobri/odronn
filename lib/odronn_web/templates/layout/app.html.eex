@@ -32,8 +32,8 @@
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="nav navbar-nav navbar-right">
               <li><span></span><a href="/#top" class="home">Home</a></li>
-              <li><span></span><a href="/#second-section" class="portfolio">Dosadasnji radovi</a></li>
-              <li><span></span><a href="/#third-section" class="contact">Kontakt</a></li>
+              <li><span></span><a href="/#our-work" class="portfolio">Our work</a></li>
+              <li><span></span><a href="/#contact" class="contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -49,7 +49,8 @@
           <div class="col-md-12">
             <div class="col-md-4">
               <div class="copyright-text">
-                <p>Copyright &copy; 2184 <a href="#">Boki Zvijer i Tigrovi</a></p>
+                <p>Copyright &copy; 2184 <a href="https://www.facebook.com/groups/499945573717742">Boki Zvijer i
+                    Tigrovi</a></p>
               </div>
             </div>
             <div class="col-md-4">
