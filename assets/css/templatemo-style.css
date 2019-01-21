@@ -32,7 +32,7 @@ html {
 }
 
 .navbar-default {
-    background-color: #98d361;
+    background-color: #808080;
     border-color: transparent;
 }
 
@@ -143,8 +143,8 @@ html {
 }
 
 .heading {
-    border-bottom: 4px solid #98d361;
-    border-top: 4px solid #98d361;
+    border-bottom: 4px solid #808080;
+    border-top: 4px solid #808080;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -165,7 +165,7 @@ html {
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 45px solid #98d361;
+    border-top: 45px solid #808080;
 }
 
 .cd-container {
@@ -281,7 +281,7 @@ html {
 }
 
 .cd-timeline-img:hover {
-    background-color: #98d361;
+    background-color: #808080;
     cursor: pointer;
 }
 
@@ -726,7 +726,7 @@ textarea {
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 3px solid #b1e67f;
+    border: 3px solid #a2a2a2;
     width: 160px;
     height: 45px;
     display: block;
@@ -734,12 +734,12 @@ textarea {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background-color: #98d361;
+    background-color: #808080;
 }
 
 .submit input:hover {
-    background-color: #b1e67f;
-    border-color: #98d361;
+    background-color: #a2a2a2;
+    border-color: #808080;
 }
 
 form {
@@ -773,7 +773,7 @@ form {
 }
 
 footer {
-    background-color: #98d361;
+    background-color: #808080;
     position: fixed;
     margin-top: 40px;
 }
@@ -811,7 +811,7 @@ footer {
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 3px solid #b1e67f;
+    border: 3px solid #a2a2a2;
     width: 170px;
     height: 40px;
     display: inline-block;
@@ -819,11 +819,11 @@ footer {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background-color: #98d361;
+    background-color: #808080;
 }
 
 .back-to-top a:hover {
-    background-color: #98d361;
+    background-color: #808080;
     border-color: #8bc655;
 }
 
@@ -846,12 +846,12 @@ footer {
     display: block;
     text-align: center;
     line-height: 35px;
-    background-color: #98d361;
-    border: 4px solid #b1e67f;
+    background-color: #808080;
+    border: 4px solid #a2a2a2;
 }
 
 .social-icons a:hover {
-    background-color: #98d361;
+    background-color: #808080;
     border-color: #8bc655;
 }
 
