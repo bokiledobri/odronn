@@ -13,16 +13,16 @@ defmodule OdronnWeb.PageController do
     render(conn, "login.html")
   end
 
-  def login(conn, %{"username" => name, "password" => pass}) do
+  def login(conn, %{"login" => %{"username" => name, "password" => pass}}) do
     phrase =
       {Application.get_env(:odronn, :auth)[:uname], Application.get_env(:odronn, :auth)[:pass]}
 
     new_conn =
-      case {name, pass} do
-        phrase ->
+      cond do
+        {name, pass} === phrase ->
           put_session(conn, :admin, true)
 
-        _ ->
+        true ->
           put_session(conn, :admin, false)
       end
 

@@ -21,6 +21,8 @@ config :odronn, OdronnWeb.Endpoint,
     ]
   ]
 
+config :odronn, :auth, uname: "uname", pass: "pass"
+
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed

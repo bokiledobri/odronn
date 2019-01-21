@@ -5,9 +5,9 @@ defmodule Odronn.ThesisAuth do
 
   @behaviour Thesis.Auth
 
-  def page_is_editable?(_conn) do
+  def page_is_editable?(conn) do
     # Editable by the world
-    true
+    Plug.Conn.get_session(conn, :admin)
 
     # Or use your own auth strategy. Learn more:
     # https://github.com/infinitered/thesis-phoenix#authorization
