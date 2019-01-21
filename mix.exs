@@ -43,6 +43,7 @@ defmodule Odronn.Mixfile do
       {:distillery, "~> 1.5", runtime: false},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
+      {:plug_cowboy, "~> 1.0"},
       {:thesis, git: "https://github.com/johannesE/thesis-phoenix.git"}
     ]
   end
