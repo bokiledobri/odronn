@@ -1,49 +1,51 @@
 <div class="container tpo-padding">
   <div class="row">
-    <div class="col-md-12 blogShort">
+    <div class="col-md-12 blogShort heading">
       <%= content(@conn, "Post title", :html) do %>
-      <h1>How to lose 20 pounds in 1 week!</h1>
-      <%end%>
-      <%= content(@conn, "Post subtitle", :html) do %>
-      <h3>And potentially die in the process.</h3>
-      <%end%>
-      <br>
-      <%= content(@conn, "Post embed", :raw_html) do %>
-      <iframe width="100%" height="480" src="https://www.youtube.com/embed/Vt_WLYubVlk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <%end%>
-      <%= content(@conn, "Post content", :html) do %>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-        book.
-        It has survived not only
-        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-        popularised
-        in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-        Aldus
-        PageMaker including versions of
-        Lorem Ipsum.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-        book.
-        It has survived not only
-        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-        popularised
-        in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-        Aldus
-        PageMaker including versions of
-        Lorem Ipsum.
-      </p>
-      <%end%>
+      <h2>How to lose 20 pounds in 1 week!</h1>
+        <%end%>
+        <%= content(@conn, "Post subtitle", :html) do %>
+        <h3>And potentially die in the process.</h3>
+        <%end%>
+        <br>
+        <%= content(@conn, "Post embed", :raw_html) do %>
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/Vt_WLYubVlk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <%end%>
+        <%= content(@conn, "Post content", :html) do %>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
+          standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only
+          five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+          popularised
+          in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus
+          PageMaker including versions of
+          Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
+          standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only
+          five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+          popularised
+          in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus
+          PageMaker including versions of
+          Lorem Ipsum.
+        </p>
+        <%end%>
 
 
 
-      </article>
+        </article>
 
     </div>
   </div>
