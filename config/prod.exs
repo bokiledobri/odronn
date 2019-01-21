@@ -32,6 +32,8 @@ config :odronn, Odronn.Repo,
   ssl: true,
   pool_size: 1
 
+config :odronn, :auth, uname: System.get_env("UNAME"), pass: System.get_env("PASS")
+
 config :libcluster,
   topologies: [
     k8s_example: [
