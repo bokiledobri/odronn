@@ -1,36 +1,7 @@
-<%= thesis_editor(@conn)%>
-<header class="site-header" id="top">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="logo-wrapper">
-                        <a class="navbar-brand" href="#templatemo">
-                            <p>O<em>dronn</em></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><span></span><a href="#top" class="home">Home</a></li>
-                        <li><span></span><a href="#second-section" class="portfolio">Dosadasnji radovi</a></li>
-                        <li><span></span><a href="#third-section" class="contact">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-<div id="cta">
+<div id="big-banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <%= content(@conn, "Homepage summary", :html) do %>
-                <p>What we have done</p>
-                <% end %>
+            <div class="col-md-12 col-xs-12">
             </div>
         </div>
     </div>
@@ -63,7 +34,7 @@
                     <div class="cd-timeline-block">
                         <a href="<%= slug %>">
                             <div class="cd-timeline-img cd-picture">
-                                <img src="images/camera-icon.png" alt="Picture">
+                                <img src="images/odronn_icon.jpg" alt="Picture">
                             </div>
                         </a>
 
@@ -80,6 +51,74 @@
                     </div>
                     <% end )%>
                 </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="third-section">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <%= content(@conn, "Homepage subsubheading", :html) do %>
+                    <h2>Send us a message</h2>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="third-section3">
+    <div class="container">
+        <div class="row">
+            <div class="triangle"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <form class="form">
+                    <div class="row">
+                        <div class="name col-md-4">
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                        </div>
+                        <div class="email col-md-4">
+                            <input type="text" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="subject col-md-4">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text col-md-12">
+                            <textarea name="text" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send Now" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-discription">
+                    <%= content(@conn, "About heading", :html) do %>
+                    <h4>More About Us!</h4>
+                    <% end %>
+
+                    <%= content(@conn, "About content", :html) do %>
+                    <p>Suspendisse sit amet tincidunt dolor, at elementum augue. In non diam nulla. Nulla sit amet
+                        ipsum finibus purus tempor pellentesque.
+                        <br><br>
+                        <strong>Mailing Address:</strong><br>
+                        No 123, New street, Sed sit amet arcu ut quam, 10550.
+                        <br><br>
+                        Tel: 010 020 0340<br>
+                        Email: info@company.com
+                        <br><br>
+                        Morbi tincidunt nibh ante, ut lacinia turpis euismod vel. Nam suscipit justo sit amet vehicula
+                        elementum.
+                    </p>
+                    <%end%>
+                </div>
             </div>
         </div>
     </div>

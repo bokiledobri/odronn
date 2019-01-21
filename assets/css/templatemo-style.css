@@ -774,6 +774,7 @@ form {
 
 footer {
     background-color: #98d361;
+    position: fixed;
     margin-top: 40px;
 }
 

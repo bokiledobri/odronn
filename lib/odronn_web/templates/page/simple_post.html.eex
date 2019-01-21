@@ -1,17 +1,46 @@
-<div class="col-lg-4">
-  <%= content(@conn, "Blog title", :html) do %>
-  <h2>Title</h2>
-  <% end %>
-</div>
+<div class="container tpo-padding">
+  <div class="row">
+    <div class="col-md-12 blogShort">
+      <h1>Title 1</h1>
+      <h3>How to lose 20 pounds in 1 week!</h3>
+      <br>
+      <iframe width="100%" height="480" src="//www.youtube.com/embed/Bn_d-ghQ5HA" frameborder="0" allowfullscreen></iframe>
 
-<div class="col-lg-6">
-  <%= content(@conn, "Blog post", :html) do %>
-  <p>Odje kao neki opis</p>
-  <% end %>
-</div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+        It has survived not only
+        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+        popularised
+        in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus
+        PageMaker including versions of
+        Lorem Ipsum.
+      </p>
+      <h4>It is so easy</h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+        It has survived not only
+        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+        popularised
+        in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus
+        PageMaker including versions of
+        Lorem Ipsum.
+      </p>
 
-<div class="col-lg-6">
-  <%= content(@conn, "Youtube embed", :raw_html) do %>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5SVLs_NN_uY" frameborder="0" allowfullscreen></iframe>
-  <% end %>
+
+
+      </article>
+
+    </div>
+  </div>
+</div>
 </div>

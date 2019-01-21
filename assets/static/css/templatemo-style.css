@@ -30,7 +30,9 @@ html {
 #top {
     margin-top: -50px;
 }
-
+.blogShort{ border-bottom:1px solid #ddd;}
+.add{background: #333; padding: 10%; height: 300px;}
+.tpo-padding{ padding-top: 10%;}
 .navbar-default {
     background-color: #98d361;
     border-color: transparent;

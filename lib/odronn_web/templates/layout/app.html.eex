@@ -14,7 +14,74 @@
 </head>
 
 <body>
+  <%= thesis_editor(@conn)%>
+  <header class="site-header" id="top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="logo-wrapper">
+              <a class="navbar-brand" href="/">
+                <p>O<em>dronn</em></p>
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><span></span><a href="/#top" class="home">Home</a></li>
+              <li><span></span><a href="/#second-section" class="portfolio">Dosadasnji radovi</a></li>
+              <li><span></span><a href="/#third-section" class="contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <%= render @view_module, @view_template, assigns %>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2184 <a href="#">Boki Zvijer i Tigrovi</a></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="back-to-top">
+                <a href="#top">Back To Top</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="social-icons">
+                <ul>
+                  <li>
+                    <%= content(@conn, "Facebook link", :raw_html) do %><a href="https://www.facebook.com/odronnmusic/"
+                      class="#"><i class="fa fa-facebook"></i></a>
+                    <%end%>
+                  </li>
+                  <li>
+                    <%= content(@conn, "Youtube link", :raw_html) do %><a href="https://www.youtube.com/channel/UC3hYTJOv8cYAnoB4FeXmVrQ"
+                      class="#"><i class="fa fa-youtube-play"></i></a>
+                    <%end%>
+                  </li>
+                  <li>
+                    <%= content(@conn, "Rss link", :raw_html) do %><a href="www.google.com" class="#"><i class="fa fa-rss"></i></a>
+                    <%end%>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript" src="<%= static_path(@conn, "/js/app.js") %>"></script>
   <script type="text/javascript" src="<%= static_path(@conn, "/js/vendor/jquery-1.10.2.min.js") %>"></script>
   <script type="text/javascript" src="<%= static_path(@conn, "/js/vendor/modernizr.min.js") %>"></script>
