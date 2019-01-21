@@ -6,7 +6,7 @@ defmodule OdronnWeb.PageView do
   def get_pages do
     query =
       from(t in "thesis_pages",
-        where: t.slug !== "/",
+        where: t.slug != "/",
         select: {t.slug, t.title}
       )
 
