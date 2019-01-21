@@ -18,6 +18,9 @@ defmodule OdronnWeb.Router do
     pipe_through(:browser)
 
     get("/", PageController, :index)
+    get("/dangerously_enter_username_and_password", PageController, :dsuap)
+    post("/login", PageController, :login)
+    get("/*path", PageController, :dynamic)
   end
 
   # Other scopes may use custom stacks.
