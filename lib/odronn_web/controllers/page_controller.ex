@@ -13,6 +13,16 @@ defmodule OdronnWeb.PageController do
     render(conn, "login.html")
   end
 
+  def dashboard(conn, _params) do
+    cond do
+      Plug.Conn.get_session(conn, :admin) ->
+        render(conn, "dashboard.html")
+
+      true ->
+        render(conn, "404.html")
+    end
+  end
+
   def login(conn, %{"login" => %{"username" => name, "password" => pass}}) do
     phrase =
       {Application.get_env(:odronn, :auth)[:uname], Application.get_env(:odronn, :auth)[:pass]}

@@ -31,6 +31,11 @@
           </div>
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="nav navbar-nav navbar-right">
+              <%= cond do%>
+              <%= is_admin?(@conn) ->%>
+              <li><span></span><a href="/dashboard" class="home">Dashboard</a></li>
+              <%=true ->%>
+              <%end%>
               <li><span></span><a href="/#top" class="home">Home</a></li>
               <li><span></span><a href="/#our-work" class="portfolio">Our work</a></li>
               <li><span></span><a href="/#contact" class="contact">Contact</a></li>

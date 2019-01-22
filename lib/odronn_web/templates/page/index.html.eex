@@ -78,8 +78,16 @@
             <div class="col-md-8">
                 <form class="form">
                     <div class="row">
+                        <div class="email col-md-6">
+                            <input type="text" name="msg-contact" id="msg-contact" placeholder="Contact" />
+                        </div>
+                        <div class="subject col-md-6">
+                            <input type="text" name="msg-subject" id="msg-subject" placeholder="Subject" />
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="text col-md-12">
-                            <textarea name="text" placeholder="Message"></textarea>
+                            <textarea name="msg-text" id="msg-text" placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="submit">

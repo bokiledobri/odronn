@@ -44,6 +44,10 @@ defmodule OdronnWeb do
       import OdronnWeb.ErrorHelpers
       import OdronnWeb.Gettext
 
+      def is_admin?(conn) do
+        Plug.Conn.get_session(conn, :admin)
+      end
+
       use Thesis.View
     end
   end

@@ -73,11 +73,6 @@ h3 {
     transition: all 350ms ease-in-out;
 }
 
-.navbar-right a:hover {
-  /*background-color: #fff !important;*/
-  /*color: #808080 !important;*/;
-}
-
 .navbar-right li {
     height: 50px;
     position: relative;

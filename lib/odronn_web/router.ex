@@ -19,6 +19,7 @@ defmodule OdronnWeb.Router do
 
     get("/", PageController, :index)
     get("/dangerously_enter_username_and_password", PageController, :dsuap)
+    get("/dashboard", PageController, :dashboard)
     post("/login", PageController, :login)
     get("/*path", PageController, :dynamic)
   end
