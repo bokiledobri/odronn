@@ -14,7 +14,26 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #808080;
+    border-color: #808080;
+}
 
+.btn-primary:hover{
+    background-color: #808590;
+    border-color: #808080;
+}
+.btn-primary:active{
+    background-color: #777;
+    border-color: #777;
+}
+.btn-primary:focus {
+    border-color: #959595;
+}
 .blue {
 	color:#06F;
 	font-weight:normal;

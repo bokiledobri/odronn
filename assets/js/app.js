@@ -23,6 +23,6 @@ switch (window.page) {
     case "/dashboard":
         ReactDOM.render(<Inbox socket={socket} />, document.getElementById("inbox"));
         break;
-    default:
+    case "/":
         ReactDOM.render(<MessageBox socket={socket} />, document.getElementById("message-box"));
 }
