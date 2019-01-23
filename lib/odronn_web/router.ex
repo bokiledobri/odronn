@@ -13,6 +13,13 @@ defmodule OdronnWeb.Router do
     plug(:accepts, ["json"])
   end
 
+  scope "/api" do
+    pipe_through(:api)
+
+    forward("/graphiql", Absinthe.Plug.GraphiQL, schema: OdronnWeb.Schema)
+    forward("/", Absinthe.Plug, schema: OdronnWeb.Schema)
+  end
+
   scope "/", OdronnWeb do
     # Use the default browser stack
     pipe_through(:browser)
@@ -23,9 +30,4 @@ defmodule OdronnWeb.Router do
     post("/login", PageController, :login)
     get("/*path", PageController, :dynamic)
   end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", OdronnWeb do
-  #   pipe_through :api
-  # end
 end

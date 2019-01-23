@@ -12,6 +12,7 @@ import "phoenix_html"
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { client, ApolloProvider } from './apollo'
 
 // Import local files
 //
@@ -24,5 +25,7 @@ switch (window.page) {
         ReactDOM.render(<Inbox socket={socket} />, document.getElementById("inbox"));
         break;
     case "/":
-        ReactDOM.render(<MessageBox socket={socket} />, document.getElementById("message-box"));
+        ReactDOM.render(
+            <ApolloProvider client={client}><MessageBox />
+            </ApolloProvider>, document.getElementById("message-box"));
 }
