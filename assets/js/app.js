@@ -12,17 +12,17 @@ import "phoenix_html"
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { client, ApolloProvider } from './apollo'
+import { client } from './apollo'
+import { ApolloProvider } from 'react-apollo'
 
 // Import local files
 //
 // Local files can be imported directly using relative paths, for example:
-import socket from "./socket"
 import Inbox from "./components/inbox"
 import MessageBox from "./components/message_box"
 switch (window.page) {
     case "/dashboard":
-        ReactDOM.render(<Inbox socket={socket} />, document.getElementById("inbox"));
+        ReactDOM.render(<ApolloProvider client={client}><Inbox /></ApolloProvider>, document.getElementById("inbox"));
         break;
     case "/":
         ReactDOM.render(

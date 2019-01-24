@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+import { Mutation, ApolloConsumer } from 'react-apollo';
+import gql from 'graphql-tag';
 
-class MessageBox extends Component {
+
+
+
+class MessageForm extends Component {
     render() {
         return (
             <form className="form">
@@ -25,4 +30,4 @@ class MessageBox extends Component {
     }
 }
 
-export default MessageBox
+export default MessageForm;
