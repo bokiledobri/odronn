@@ -8,6 +8,11 @@ defmodule OdronnWeb.Schema do
     field(:messages, list_of(non_null(:message))) do
       resolve(&MessageResolver.list/3)
     end
+
+    field(:message, non_null(:message)) do
+      arg(:id, :id)
+      resolve(&MessageResolver.get/3)
+    end
   end
 
   mutation do

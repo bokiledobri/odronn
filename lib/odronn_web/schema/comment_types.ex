@@ -6,5 +6,6 @@ defmodule OdronnWeb.Schema.CommentTypes do
     field(:subject, non_null(:string))
     field(:contact, :string)
     field(:text, non_null(:string))
+    field(:seen, :boolean)
   end
 end

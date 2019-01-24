@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import gql from 'graphql-tag';
 import MessageList from './message_list'
 import MessageDetail from './message_detail'
+
 
 class Inbox extends Component {
     render() {
@@ -10,5 +10,7 @@ class Inbox extends Component {
         )
     }
 }
+
+
 
 export default Inbox
