@@ -23,5 +23,15 @@ defmodule OdronnWeb.Schema do
 
       resolve(&MessageResolver.create/3)
     end
+
+    field :leave_seen, :message do
+      arg(:id, non_null(:id))
+      resolve(&MessageResolver.leave_seen/3)
+    end
+
+    field :delete, :message do
+      arg(:id, non_null(:id))
+      resolve(&MessageResolver.delete/3)
+    end
   end
 end

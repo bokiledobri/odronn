@@ -20,4 +20,14 @@ defmodule OdronnWeb.Resolvers.MessageResolver do
         {:error, "could not send message"}
     end
   end
+
+  def leave_seen(_root, %{id: id}, _meta) do
+    Comments.get_message!(id)
+    |> Comments.update_message(%{seen: true})
+  end
+
+  def delete(_root, %{id: id}, _meta) do
+    Comments.get_message!(id)
+    |> Comments.delete_message()
+  end
 end
